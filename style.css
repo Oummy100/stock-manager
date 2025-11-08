@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--Primary : #2563eb;
+--Primary-Dark : #1d4ed8;
+--Secondary : #64748b;
+--Success : #10b981;
+--Warning : #f59e0b;
+--Danger : #ef4444;
+
+
+
+--Background : #f8fafc; 
+--Sidebar : #1e293b; 
+--Sidebar-Hover : #334155; 
+--White : #ffffff; 
+
+
+
+--Text-Primary : #1e293b;
+--Text-Secondary : #64748b;
+--Text-White : #ffffff;
+
+
+
+--Border : #e2e8f0;
+
+
+
+--H1 : 2rem;
+--H2 : 1.75rem;
+--H3 : 1.5rem;
+--H4 : 1.25rem;
+--H5 : 1.125rem;
+--H6 : 1rem;
+
+
+--Large : 1.25rem;
+--Base : 1rem;
+--Small : 0.875rem;
+--Extra-Small : 0.75rem;
+
+
+--Padding-Standard-cartes : 1rem;  
+--Padding-Standard-sections : 1.5rem;
+--Margin-Standard-elements : 1rem; 
+--Margin-Standard-sections : 2rem;
+--Gap-Grid : 1.5rem;
+
+
+
+--Shadow : 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+--Shadow-Medium : 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+--Shadow-Large : 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+
+
+--Série1 : #3b82f6;
+--Série2 : #10b981; 
+--Série3 : #f59e0b; 
+--Série4 : #ef4444;
+--Série5 : #8b5cf6;
+
+}
