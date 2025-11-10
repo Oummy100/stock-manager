@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fontawesome.com/search?f=classic&s=solid&c=automotive&o=r">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="dashbord.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="gauche">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <h2>Gestion de Stock - Produits Electroniques</h2>
+            </div>
+            <div class="droite">
+                <span>3</span>
+                <button><i class="fa-solid fa-bell"></i></button>
+                <div class="profil">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <h3>Administrateur</h3>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <header>
+        <i class="fa-solid fa-chart-line"></i>
+        <h2>Dashboard</h2>
+        </header>
+      
+        <ul>
+            <li><i class="fa-solid fa-gauge-high"></i>Tableau de Bord</li>
+            <li><i class="fa-solid fa-chart-line"></i>Analitics</li>
+            <li><i class="fa-solid fa-cart-shopping"></i>Commandes</li>
+            <li><i class="fa-solid fa-gears"></i>Paramètres</li>
+            <li><i class="fa-solid fa-chart-bar"></i>Rapports</li>
+            <li><i class="fa-solid fa-bell"></i> Notifications</li>
+        </ul>
+  
+        <div class="end">
+            <div class="admin">
+                <i class="fa-solid fa-user"></i>
+                <div class="title">
+                    <h3>Administrateur</h3>
+                    <p>Gestionnaire</p>
+                </div>
+            </div>
+
+            <div class="profil1">
+                <i class="fa-solid fa-user"></i>
+                <h3>Mon Profil</h3>
+            </div>
+
+            <div class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <h3>Deconnexion</h3>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <section class="entete">
+            <h1>Tableau de Bord Principal</h1>
+            <p>Gestion de stock de produits électroniques</p>
+        </section>
+        <section class="bilan premier">
+            <span><i class="fa-solid fa-boxes-stacked"></i></span>
+            <div class="header">
+                <h1>1,234</h1>
+                <p>Produits en Stock</p>
+            </div>
+        </section>
+        <section class="bilan second">
+            <span><i class="fa-solid fa-triangle-exclamation"></i></span>
+            <div class="header">
+                <h1>23</h1>
+                <p>Stock Faible</p>
+            </div>
+        </section>
+        <section class="bilan troisieme">
+            <span><i class="fa-solid fa-euro-sign"></i></span>
+            <div class="header">
+                <h1>€45,678</h1>
+                <p>Valeur Totale</p>
+            </div>
+        </section>
+        <section class="bilan fin">
+            <span><i class="fa-solid fa-truck"></i></span>
+            <div class="header">
+                <h1>12</h1>
+                <p>Commandes en Attente</p>
+            </div>
+        </section>
+        <section>
+            <div class="head">
+                <h2>Gestion des Stocks</h2>
+                <input type="text" placeholder="Rechercher un produit...">
+            </div>
+            <div class="buttons">
+                <button><span><i class="fa-solid fa-plus"></i></span><p>Ajouter Produit</p></button>
+                <button><span><i class="fa-solid fa-download"></i></span><p>Exporter</p></button>
+            </div>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>PRODUIT</td>
+                    <td>CATEGORIE</td>
+                    <td>STOCK</td>
+                    <td>PRIX</td>
+                    <td>STATUT</td>
+                    <td>ACTIONS</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td><i></i>
+                        <div class="appareil">
+                            <p>MacBook Pro 16"</p>
+                            <p>Apple - M3 Pro</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>LAPTOP</p>
+                    </td>
+                    <td>
+                        <p>15</p>
+                    </td>
+                    <td>€2,899</td>
+                    <td>
+                        <p>Actif</p>
+                    </td>
+                    <td><i></i><i></i></td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td><i></i>
+                        <div class="appareil">
+                            <p>iphone 15 Pro</p>
+                            <p>Apple - 128GB</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>SMARTPHONE</p>
+                    </td>
+                    <td>
+                        <p>8</p>
+                    </td>
+                    <td>€1,199</td>
+                    <td>
+                        <p>Actif</p>
+                    </td>
+                    <td><i></i><i></i></td>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td><i></i>
+                        <div class="appareil">
+                            <p>AirPods Pro 2</p>
+                            <p>Apple - USB-C</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>AUDIO</p>
+                    </td>
+                    <td>
+                        <p>3</p>
+                    </td>
+                    <td>€279</td>
+                    <td>
+                        <p>Stock Faible</p>
+                    </td>
+                    <td><i></i><i></i></td>
+                </tr>
+                <tr>
+                    <td>#004</td>
+                    <td><i></i>
+                        <div class="appareil">
+                            <p>ipad Air</p>
+                            <p>Apple - 64GB</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>Tablette</p>
+                    </td>
+                    <td>
+                        <p>22</p>
+                    </td>
+                    <td>€649</td>
+                    <td>
+                        <p>Actif</p>
+                    </td>
+                    <td><i></i><i></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#005</td>
+                    <td><i></i>
+                        <div class="appareil">
+                            <p>Apple TV 4K</p>
+                            <p>128GB - WiFi</p>
+                        </div>
+                    </td>
+                    <td>
+                        <p>TV</p>
+                    </td>
+                    <td>
+                        <p>12</p>
+                    </td>
+                    <td>€179</td>
+                    <td>
+                        <p>Actif</p>
+                    </td>
+                    <td><i></i><i></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
