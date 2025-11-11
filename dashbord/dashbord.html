@@ -12,239 +12,275 @@
 </head>
 
 <body>
-    <header>
-
-        <nav>
-            <div class="gauche">
-                <a href="#menu"><i class="fa-solid fa-bars"></i></a>
-                <h2>Gestion de Stock - Produits Electroniques</h2>
+    <div class="dashboard-container">
+        <!-- SIDEBAR -->
+        <aside id="menu">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Dashboard</h2>
             </div>
-            <div class="droite">
-                <span>3</span>
-                <button><i class="fa-solid fa-bell"></i></button>
-                <div class="profil">
-                    <p><i class="fa-solid fa-circle-user"></i></p>
-                    <h3>Administrateur</h3>
+
+            <ul class="sidebar-menu">
+                <li><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</li>
+                <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+                <li><i class="fa-solid fa-cart-shopping"></i> Commandes</li>
+                <li><i class="fa-solid fa-gears"></i> Paramètres</li>
+                <li><i class="fa-solid fa-chart-bar"></i> Rapports</li>
+                <li><i class="fa-solid fa-bell"></i> Notifications</li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-admin">
+                    <span class="sidebar-admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <div class="sidebar-admin-info">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+
+                <div class="sidebar-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Déconnexion</h3>
                 </div>
             </div>
-        </nav>
-    </header>
-    <aside id="menu" class="sidebar">
+        </aside>
+
+        <!-- HEADER -->
         <header>
-            <i class="fa-solid fa-chart-line"></i>
-            <h2>Dashboard</h2>
+            <nav>
+                <div class="nav-gauche">
+                    <a href="#menu"><i class="fa-solid fa-bars"></i></a>
+                    <h2>Gestion de Stock - Produits Électroniques</h2>
+                </div>
+                <div class="nav-droite">
+                    <button>
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="nav-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Administrateur</h3>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <ul>
-            <li><i class="fa-solid fa-gauge-high"></i>Tableau de Bord</li>
-            <li><i class="fa-solid fa-chart-line"></i>Analitics</li>
-            <li><i class="fa-solid fa-cart-shopping"></i>Commandes</li>
-            <li><i class="fa-solid fa-gears"></i>Paramètres</li>
-            <li><i class="fa-solid fa-chart-bar"></i>Rapports</li>
-            <li><i class="fa-solid fa-bell"></i> Notifications</li>
-        </ul>
+        <!-- MAIN CONTENT -->
+        <main>
+            <a href="#" class="overlay"></a>
+            
+            <div class="page-header">
+                <h1>Tableau de Bord Principal</h1>
+                <p>Gestion de stock de produits électroniques</p>
+            </div>
 
-        <div class="end">
-            <div class="admin">
-                <span><i class="fa-solid fa-user"></i></span>
-                <div class="title">
-                    <h3>Administrateur</h3>
-                    <p>Gestionnaire</p>
+            <!-- STATISTIQUES -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon primary">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>1,234</h1>
+                        <p>Produits en Stock</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon warning">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>23</h1>
+                        <p>Stock Faible</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon success">
+                        <i class="fa-solid fa-euro-sign"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>€45,678</h1>
+                        <p>Valeur Totale</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon secondary">
+                        <i class="fa-solid fa-truck"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>12</h1>
+                        <p>Commandes en Attente</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="profil1">
-                <i class="fa-solid fa-circle-user"></i>
-                <h3>Mon Profil</h3>
-            </div>
-
-            <div class="logout">
-                <i class="fa-solid fa-right-from-bracket"></i>
-                <h3>Deconnexion</h3>
-            </div>
-        </div>
-    </aside>
-    <a href="#" class="overlay"></a>
-    <main>
-        <section class="entete">
-            <h1>Tableau de Bord Principal</h1>
-            <p>Gestion de stock de produits électroniques</p>
-        </section>
-        <section class="bilan premier">
-            <span><i class="fa-solid fa-boxes-stacked"></i></span>
-            <div class="header">
-                <h1>1,234</h1>
-                <p>Produits en Stock</p>
-            </div>
-        </section>
-        <section class="bilan second">
-            <span><i class="fa-solid fa-triangle-exclamation"></i></span>
-            <div class="header">
-                <h1>23</h1>
-                <p>Stock Faible</p>
-            </div>
-        </section>
-        <section class="bilan troisieme">
-            <span><i class="fa-solid fa-euro-sign"></i></span>
-            <div class="header">
-                <h1>€45,678</h1>
-                <p>Valeur Totale</p>
-            </div>
-        </section>
-        <section class="bilan fin">
-            <span><i class="fa-solid fa-truck"></i></span>
-            <div class="header">
-                <h1>12</h1>
-                <p>Commandes en Attente</p>
-            </div>
-        </section>
-
-        <table>
-            <caption>
-
-                <div class="head">
-                    <h2>Gestion des Stocks</h2>
-                    <input type="text" placeholder="Rechercher un produit...">
-                </div>
-                <div class="buttons">
-                    <button><span><i class="fa-solid fa-plus"></i></span>
-                        <p>Ajouter Produit</p>
-                    </button>
-                    <button><span><i class="fa-solid fa-download"></i></span>
-                        <p>Exporter</p>
-                    </button>
+            <!-- TABLE -->
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="table-header-top">
+                        <h2>Gestion des Stocks</h2>
+                        <input type="text" placeholder="Rechercher un produit...">
+                    </div>
+                    <div class="table-actions">
+                        <button class="primary">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Ajouter Produit</span>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-download"></i>
+                            <span>Exporter</span>
+                        </button>
+                    </div>
                 </div>
 
-            </caption>
-
-            <thead>
-                <th>ID</th>
-                <th>PRODUIT</th>
-                <th>CATEGORIE</th>
-                <th>STOCK</th>
-                <th>PRIX</th>
-                <th>STATUT</th>
-                <th>ACTIONS</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>#001</td>
-                    <td>
-                        <span><i class="fa-solid fa-laptop"></i></span>
-                        <div class="appareil">
-                            <p>MacBook Pro 16"</p>
-                            <p>Apple - M3 Pro</p>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="bleu">LAPTOP</span>
-                    </td>
-                    <td>
-                        <span class="vert">15</span>
-                    </td>
-                    <td>€2,899</td>
-                    <td>
-                        <span class="vert">Actif</span>
-                    </td>
-                    <td>
-                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>#002</td>
-                    <td>
-                        <span><i class="fa-solid fa-tablet-screen-button"></i></span>
-                        <div class="appareil">
-                            <p>iphone 15 Pro</p>
-                            <p>Apple - 128GB</p>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="vert">SMARTPHONE</span>
-                    </td>
-                    <td>
-                        <span class="orange">8</span>
-                    </td>
-                    <td>€1,199</td>
-                    <td>
-                        <span class="vert">Actif</span>
-                    </td>
-                    <td>
-                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>#003</td>
-                    <td>
-                        <span><i class="fa-solid fa-headphones"></i></span>
-                        <div class="appareil">
-                            <p>AirPods Pro 2</p>
-                            <p>Apple - USB-C</p>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="orange">AUDIO</span>
-                    </td>
-                    <td>
-                        <span class="rose">3</span>
-                    </td>
-                    <td>€279</td>
-                    <td>
-                        <span class="orange">Stock Faible</span>
-                    </td>
-                    <td>
-                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>#004</td>
-                    <td>
-                        <span><i class="fa-solid fa-tablet-screen-button"></i></span>
-                        <div class="appareil">
-                            <p>ipad Air</p>
-                            <p>Apple - 64GB</p>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="violet">Tablette</span>
-                    </td>
-                    <td>
-                        <span class="vert">22</span>
-                    </td>
-                    <td>€649</td>
-                    <td>
-                        <span class="vert">Actif</span>
-                    </td>
-                    <td>
-                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>#005</td>
-                    <td>
-                        <span><i class="fa-solid fa-laptop"></i></span>
-                        <div class="appareil">
-                            <p>Apple TV 4K</p>
-                            <p>128GB - WiFi</p>
-                        </div>
-                    </td>
-                    <td>
-                        <span class="rose">TV</span>
-                    </td>
-                    <td>
-                        <span class="orange">12</span>
-                    </td>
-                    <td>€179</td>
-                    <td>
-                        <span class="vert">Actif</span>
-                    </td>
-                    <td>
-                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>PRODUIT</th>
+                            <th>CATÉGORIE</th>
+                            <th>STOCK</th>
+                            <th>PRIX</th>
+                            <th>STATUT</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>
+                                <div class="product-cell">
+                                    <span class="product-icon">
+                                        <i class="fa-solid fa-laptop"></i>
+                                    </span>
+                                    <div class="product-info">
+                                        <p>MacBook Pro 16"</p>
+                                        <p>Apple - M3 Pro</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge blue">LAPTOP</span></td>
+                            <td><span class="badge green">15</span></td>
+                            <td>€2,899</td>
+                            <td><span class="badge green">Actif</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>
+                                <div class="product-cell">
+                                    <span class="product-icon">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </span>
+                                    <div class="product-info">
+                                        <p>iPhone 15 Pro</p>
+                                        <p>Apple - 128GB</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge green">SMARTPHONE</span></td>
+                            <td><span class="badge orange">8</span></td>
+                            <td>€1,199</td>
+                            <td><span class="badge green">Actif</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>
+                                <div class="product-cell">
+                                    <span class="product-icon">
+                                        <i class="fa-solid fa-headphones"></i>
+                                    </span>
+                                    <div class="product-info">
+                                        <p>AirPods Pro 2</p>
+                                        <p>Apple - USB-C</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge orange">AUDIO</span></td>
+                            <td><span class="badge red">3</span></td>
+                            <td>€279</td>
+                            <td><span class="badge orange">Stock Faible</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>
+                                <div class="product-cell">
+                                    <span class="product-icon">
+                                        <i class="fa-solid fa-tablet-screen-button"></i>
+                                    </span>
+                                    <div class="product-info">
+                                        <p>iPad Air</p>
+                                        <p>Apple - 64GB</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge purple">TABLETTE</span></td>
+                            <td><span class="badge green">22</span></td>
+                            <td>€649</td>
+                            <td><span class="badge green">Actif</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#005</td>
+                            <td>
+                                <div class="product-cell">
+                                    <span class="product-icon">
+                                        <i class="fa-solid fa-tv"></i>
+                                    </span>
+                                    <div class="product-info">
+                                        <p>Apple TV 4K</p>
+                                        <p>128GB - WiFi</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><span class="badge red">TV</span></td>
+                            <td><span class="badge orange">12</span></td>
+                            <td>€179</td>
+                            <td><span class="badge green">Actif</span></td>
+                            <td>
+                                <div class="action-buttons">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
