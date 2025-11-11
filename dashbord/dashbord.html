@@ -13,27 +13,28 @@
 
 <body>
     <header>
+
         <nav>
             <div class="gauche">
-                <button><i class="fa-solid fa-bars"></i></button>
+                <a href="#menu"><i class="fa-solid fa-bars"></i></a>
                 <h2>Gestion de Stock - Produits Electroniques</h2>
             </div>
             <div class="droite">
                 <span>3</span>
                 <button><i class="fa-solid fa-bell"></i></button>
                 <div class="profil">
-                    <p><i class="fa-solid fa-user"></i></p>
+                    <p><i class="fa-solid fa-circle-user"></i></p>
                     <h3>Administrateur</h3>
                 </div>
             </div>
         </nav>
     </header>
-    <aside>
+    <aside id="menu" class="sidebar">
         <header>
-        <i class="fa-solid fa-chart-line"></i>
-        <h2>Dashboard</h2>
+            <i class="fa-solid fa-chart-line"></i>
+            <h2>Dashboard</h2>
         </header>
-      
+
         <ul>
             <li><i class="fa-solid fa-gauge-high"></i>Tableau de Bord</li>
             <li><i class="fa-solid fa-chart-line"></i>Analitics</li>
@@ -42,10 +43,10 @@
             <li><i class="fa-solid fa-chart-bar"></i>Rapports</li>
             <li><i class="fa-solid fa-bell"></i> Notifications</li>
         </ul>
-  
+
         <div class="end">
             <div class="admin">
-                <i class="fa-solid fa-user"></i>
+                <span><i class="fa-solid fa-user"></i></span>
                 <div class="title">
                     <h3>Administrateur</h3>
                     <p>Gestionnaire</p>
@@ -53,7 +54,7 @@
             </div>
 
             <div class="profil1">
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-circle-user"></i>
                 <h3>Mon Profil</h3>
             </div>
 
@@ -63,6 +64,7 @@
             </div>
         </div>
     </aside>
+    <a href="#" class="overlay"></a>
     <main>
         <section class="entete">
             <h1>Tableau de Bord Principal</h1>
@@ -96,129 +98,149 @@
                 <p>Commandes en Attente</p>
             </div>
         </section>
-        <section>
-            <div class="head">
-                <h2>Gestion des Stocks</h2>
-                <input type="text" placeholder="Rechercher un produit...">
-            </div>
-            <div class="buttons">
-                <button><span><i class="fa-solid fa-plus"></i></span><p>Ajouter Produit</p></button>
-                <button><span><i class="fa-solid fa-download"></i></span><p>Exporter</p></button>
-            </div>
-        </section>
+
         <table>
+            <caption>
+
+                <div class="head">
+                    <h2>Gestion des Stocks</h2>
+                    <input type="text" placeholder="Rechercher un produit...">
+                </div>
+                <div class="buttons">
+                    <button><span><i class="fa-solid fa-plus"></i></span>
+                        <p>Ajouter Produit</p>
+                    </button>
+                    <button><span><i class="fa-solid fa-download"></i></span>
+                        <p>Exporter</p>
+                    </button>
+                </div>
+
+            </caption>
+
             <thead>
-                <tr>
-                    <td>ID</td>
-                    <td>PRODUIT</td>
-                    <td>CATEGORIE</td>
-                    <td>STOCK</td>
-                    <td>PRIX</td>
-                    <td>STATUT</td>
-                    <td>ACTIONS</td>
-                </tr>
+                <th>ID</th>
+                <th>PRODUIT</th>
+                <th>CATEGORIE</th>
+                <th>STOCK</th>
+                <th>PRIX</th>
+                <th>STATUT</th>
+                <th>ACTIONS</th>
             </thead>
             <tbody>
                 <tr>
                     <td>#001</td>
-                    <td><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-laptop"></i></span>
                         <div class="appareil">
                             <p>MacBook Pro 16"</p>
                             <p>Apple - M3 Pro</p>
                         </div>
                     </td>
                     <td>
-                        <p>LAPTOP</p>
+                        <span class="bleu">LAPTOP</span>
                     </td>
                     <td>
-                        <p>15</p>
+                        <span class="vert">15</span>
                     </td>
                     <td>€2,899</td>
                     <td>
-                        <p>Actif</p>
+                        <span class="vert">Actif</span>
                     </td>
-                    <td><i></i><i></i></td>
+                    <td>
+                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
+                    </td>
                 </tr>
                 <tr>
                     <td>#002</td>
-                    <td><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-tablet-screen-button"></i></span>
                         <div class="appareil">
                             <p>iphone 15 Pro</p>
                             <p>Apple - 128GB</p>
                         </div>
                     </td>
                     <td>
-                        <p>SMARTPHONE</p>
+                        <span class="vert">SMARTPHONE</span>
                     </td>
                     <td>
-                        <p>8</p>
+                        <span class="orange">8</span>
                     </td>
                     <td>€1,199</td>
                     <td>
-                        <p>Actif</p>
+                        <span class="vert">Actif</span>
                     </td>
-                    <td><i></i><i></i></td>
+                    <td>
+                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
+                    </td>
                 </tr>
                 <tr>
                     <td>#003</td>
-                    <td><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-headphones"></i></span>
                         <div class="appareil">
                             <p>AirPods Pro 2</p>
                             <p>Apple - USB-C</p>
                         </div>
                     </td>
                     <td>
-                        <p>AUDIO</p>
+                        <span class="orange">AUDIO</span>
                     </td>
                     <td>
-                        <p>3</p>
+                        <span class="rose">3</span>
                     </td>
                     <td>€279</td>
                     <td>
-                        <p>Stock Faible</p>
+                        <span class="orange">Stock Faible</span>
                     </td>
-                    <td><i></i><i></i></td>
+                    <td>
+                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
+                    </td>
                 </tr>
                 <tr>
                     <td>#004</td>
-                    <td><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-tablet-screen-button"></i></span>
                         <div class="appareil">
                             <p>ipad Air</p>
                             <p>Apple - 64GB</p>
                         </div>
                     </td>
                     <td>
-                        <p>Tablette</p>
+                        <span class="violet">Tablette</span>
                     </td>
                     <td>
-                        <p>22</p>
+                        <span class="vert">22</span>
                     </td>
                     <td>€649</td>
                     <td>
-                        <p>Actif</p>
+                        <span class="vert">Actif</span>
                     </td>
-                    <td><i></i><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
                     </td>
                 </tr>
                 <tr>
                     <td>#005</td>
-                    <td><i></i>
+                    <td>
+                        <span><i class="fa-solid fa-laptop"></i></span>
                         <div class="appareil">
                             <p>Apple TV 4K</p>
                             <p>128GB - WiFi</p>
                         </div>
                     </td>
                     <td>
-                        <p>TV</p>
+                        <span class="rose">TV</span>
                     </td>
                     <td>
-                        <p>12</p>
+                        <span class="orange">12</span>
                     </td>
                     <td>€179</td>
                     <td>
-                        <p>Actif</p>
+                        <span class="vert">Actif</span>
                     </td>
-                    <td><i></i><i></i></td>
+                    <td>
+                        <span><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></span>
+                    </td>
                 </tr>
             </tbody>
         </table>
