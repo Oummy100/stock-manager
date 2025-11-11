@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="https://fontawesome.com/search?f=classic&s=solid&c=automotive&o=r">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- SIDEBAR -->
+        <aside id="menu">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Dashboard</h2>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</li>
+                <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+                <li><i class="fa-solid fa-cart-shopping"></i> Commandes</li>
+                <li><i class="fa-solid fa-gears"></i> Paramètres</li>
+                <li><i class="fa-solid fa-chart-bar"></i> Rapports</li>
+                <li><i class="fa-solid fa-bell"></i> Notifications</li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-admin">
+                    <span class="sidebar-admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <div class="sidebar-admin-info">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+
+                <div class="sidebar-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Déconnexion</h3>
+                </div>
+            </div>
+        </aside>
+
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="nav-gauche">
+                    <a href="#menu"><i class="fa-solid fa-bars"></i></a>
+                    <h2>Gestion de Stock - Produits Électroniques</h2>
+                </div>
+                <div class="nav-droite">
+                    <button>
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="nav-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Administrateur</h3>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <a href="#" class="overlay"></a>
+            
+            <div class="page-header">
+                <h1>Tableau de Bord Principal</h1>
+                <p>Gestion de stock de produits électroniques</p>
+            </div>
+
+            <!-- STATISTIQUES -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon primary">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>1,234</h1>
+                        <p>Produits en Stock</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon warning">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>23</h1>
+                        <p>Stock Faible</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon success">
+                        <i class="fa-solid fa-euro-sign"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>€45,678</h1>
+                        <p>Valeur Totale</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon secondary">
+                        <i class="fa-solid fa-truck"></i>
+                    </span>
+                    <div class="stat-info">
+                        <h1>12</h1>
+                        <p>Commandes en Attente</p>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
