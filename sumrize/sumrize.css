@@ -492,3 +492,78 @@
         .overlay {
             display: none;
         }
+
+        section:nth-child(3){
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            background: white;
+            max-height: 10rem;
+            height: 100%;
+            border-radius: 10px;
+            align-items: center;
+        }
+
+        section:nth-child(3) select{
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: solid 0.5px;
+        }
+
+        section:nth-child(3) button{
+            padding: 0.7rem;
+            width: 10rem;
+            border-radius: 5px;
+            border: none;
+            background: var(--Primary);
+            color: white;
+            margin-top: 1.5rem;
+        }
+
+        .div2{
+            display: flex;
+            gap: 1rem;
+        }
+
+        .stat-info{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .stat-info button{
+padding: 0.5rem;
+background: white;
+border: solid 0.5px;
+border-radius: 5px;
+width: fit-content;
+        }
+
+        .stat-info h3{
+            color: var(--Primary);
+        }
+
+        .stat-card span{
+            margin-bottom: 5rem;
+        }
+
+        caption{
+            text-align: left;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            background: rgba(209, 209, 209, 0.217);
+            margin-bottom: 2rem;
+        }
+
+        table{
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+            padding: 2rem;
+        }
+
+      .gris{
+        background: rgba(209, 209, 209, 0.217);
+        font-weight: 800;
+      }
