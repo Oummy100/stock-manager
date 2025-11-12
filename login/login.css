@@ -35,8 +35,10 @@ h1 {
 }
 
 a{
-    color: rgba(29, 78, 216, 1);
-    text-decoration: none;
+    color: rgba(29, 78, 216, 1) !important;
+}
+button a{
+    color: white !important;
 }
 
 .connexion {

@@ -378,6 +378,23 @@ main {
 .bar1 {
     grid-row: 17 / 18;
     background: var(--Primary);
+    
+}
+
+.bar1:hover,
+.bar2:hover,
+.bar3:hover,
+.bar4:hover,
+.bar5:hover,
+.bar6:hover,
+.bar7:hover,
+.bar8:hover,
+.bar9:hover,
+.bar10:hover,
+.bar11:hover,
+.bar12:hover {
+    transition: ease calc(0.3s);
+    transform: translateY(-6px);
 }
 
 .bar2 {
