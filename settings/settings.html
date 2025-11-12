@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://fontawesome.com/search?f=classic&s=solid&c=automotive&o=r">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- SIDEBAR -->
+        <aside id="menu">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Dashboard</h2>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</li>
+                <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+                <li><i class="fa-solid fa-cart-shopping"></i> Commandes</li>
+                <li><i class="fa-solid fa-gears"></i> Paramètres</li>
+                <li><i class="fa-solid fa-chart-bar"></i> Rapports</li>
+                <li><i class="fa-solid fa-bell"></i> Notifications</li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-admin">
+                    <span class="sidebar-admin-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <div class="sidebar-admin-info">
+                        <h3>Administrateur</h3>
+                        <p>Gestionnaire</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+
+                <div class="sidebar-logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <h3>Déconnexion</h3>
+                </div>
+            </div>
+        </aside>
+
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="nav-gauche">
+                    <a href="#menu"><i class="fa-solid fa-bars"></i></a>
+                    <h2>Gestion de Stock - Produits Électroniques</h2>
+                </div>
+                <div class="nav-droite">
+                    <button>
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <div class="nav-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <h3>Administrateur</h3>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <a href="#" class="overlay"></a>
+
+            <div class="page-header">
+                <h1><span><i class="fa-solid fa-gears"></i></span>Paramètres & Configuration</h1>
+                <p>Configuration du système et préférences utilisateur</p>
+            </div>
+
+            <!-- STATISTIQUES -->
+            <section>
+                <div>
+                    <h2><span><i class="fa-solid fa-sliders"></i></span>Paramètre Généraux</h2>
+                </div>
+                <div>
+                    <section>
+                        <span>
+                            <h3>Notifications</h3>
+                            <p>Recevoir les notifications par email</p>
+                        </span>
+                    </section>
+                    <section>
+                        <span>
+                            <h3>Mode Sombre</h3>
+                            <p>Activer le thème sombre</p>
+                        </span>
+                    </section>
+                    <section>
+                        <span>
+                            <h3>Auto-sauvegarde</h3>
+                            <p>Sauvegarder automatiquement les modifications</p>
+                        </span>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <span>
+                            <h3>Langue</h3>
+                            <p>Langue d'interface</p>
+                        </span>
+                        <select name="jour">
+                            <option value="" disabled selected>Français</option>
+                            <option value="1">Par ventes</option>
+                            <option value="2">Par revenus</option>
+                            <option value="3">Par marge</option>
+                        </select>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2><span><i class="fa-solid fa-boxes-stacked"></i></span> Gestion de Stock</h2>
+                </div>
+                <div>
+                    <section>
+                        <div>
+                            <h3>Seuil d'alerte</h3>
+                            <p>Nombre minimum d'articles avant alerte</p>
+                        </div>
+                        <input type="number">
+                    </section>
+                    <section>
+                        <div>
+                            <h3>Auto-Commande</h3>
+                            <p>Commande automatiquementen cas de stock faible</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <h3>Devise</h3>
+                            <p>Devise d'affichage</p>
+                        </div>
+                        <select name="jour">
+                            <option value="" disabled selected>Euro (€)</option>
+                            <option value="1">Par ventes</option>
+                            <option value="2">Par revenus</option>
+                            <option value="3">Par marge</option>
+                        </select>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2><span><i class="fa-solid fa-shield"></i></span>Sécurité</h2>
+                </div>
+                <div>
+                    <section>
+                        <div>
+                            <h3>Authentification à deux facteurs</h3>
+                            <p>Activer la 2FA pour plus de sécurité</p>
+                        </div>
+                        <button>Activer</button>
+                    </section>
+                    <section>
+                        <div>
+                            <h3>Changer de mot de passe</h3>
+                            <p>Modifier votre mot de passe actuel</p>
+                        </div>
+                        <button>Changer</button>
+                    </section>
+                    <section>
+                        <div>
+                            <h3>Sessions actives</h3>
+                            <p>Gérer les sessions connectées</p>
+                        </div>
+                        <button>Voir(3)</button>
+                    </section>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2><span><i class="fa-solid fa-database"></i></span>Système</h2>
+                </div>
+                <div>
+                    <button><span><i class="fa-solid fa-floppy-disk"></i></span>Sauvegarder la configuration</button>
+                    <button><span><i class="fa-solid fa-download"></i></span>Exporter les paramètre</button>
+                    <button><span><i class="fa-solid fa-arrow-rotate-left"></i></span>Réinitialiser par défaut</button>
+                    <button><span><i class="fa-solid fa-trash"></i></span>Effacer toutes les données</button>
+                </div>
+            </section>
+</body>
+
+</html>

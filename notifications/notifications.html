@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="notifications.css">
 </head>
+
 <body>
     <div class="dashboard-container">
         <!-- SIDEBAR -->
@@ -73,21 +75,21 @@
         <!-- MAIN CONTENT -->
         <main>
             <a href="#" class="overlay"></a>
-            
+
             <div class="page-header">
-                <h1>Tableau de Bord Principal</h1>
-                <p>Gestion de stock de produits électroniques</p>
+                <h1><span><i class="fa-solid fa-bell"></i></span>Notifications & Alertes</h1>
+                <p>Centre de notification et de gestion des alertes système</p>
             </div>
 
             <!-- STATISTIQUES -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-icon primary">
-                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <i class="fa-solid fa-envelope"></i>
                     </span>
                     <div class="stat-info">
-                        <h1>1,234</h1>
-                        <p>Produits en Stock</p>
+                        <h1>12</h1>
+                        <p>Non lues</p>
                     </div>
                 </div>
 
@@ -96,30 +98,147 @@
                         <i class="fa-solid fa-triangle-exclamation"></i>
                     </span>
                     <div class="stat-info">
-                        <h1>23</h1>
-                        <p>Stock Faible</p>
+                        <h1>3</h1>
+                        <p>Urgentes</p>
                     </div>
                 </div>
 
                 <div class="stat-card">
                     <span class="stat-icon success">
-                        <i class="fa-solid fa-euro-sign"></i>
+                        <i class="fa-solid fa-calendar"></i>
                     </span>
                     <div class="stat-info">
-                        <h1>€45,678</h1>
-                        <p>Valeur Totale</p>
+                        <h1>23</h1>
+                        <p>Aujourd'hui</p>
                     </div>
                 </div>
 
                 <div class="stat-card">
                     <span class="stat-icon secondary">
-                        <i class="fa-solid fa-truck"></i>
+                        <i class="fa-solid fa-list"></i>
                     </span>
                     <div class="stat-info">
-                        <h1>12</h1>
-                        <p>Commandes en Attente</p>
+                        <h1>156</h1>
+                        <p>Total</p>
                     </div>
                 </div>
             </div>
+
+
+
+            <section class="detail">
+                <div>
+                    <p>Type de rapport:</p>
+                    <select name="jour">
+                        <option value="" disabled selected>Rapport des ventes</option>
+                        <option value="1">Par ventes</option>
+                        <option value="2">Par revenus</option>
+                        <option value="3">Par marge</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Période:</p>
+                    <select name="jour">
+                        <option value="" disabled selected>Ce mois</option>
+                        <option value="1">Par ventes</option>
+                        <option value="2">Par revenus</option>
+                        <option value="3">Par marge</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Format:</p>
+                    <select name="jour">
+                        <option value="" disabled selected>PDF</option>
+                        <option value="1">Par ventes</option>
+                        <option value="2">Par revenus</option>
+                        <option value="3">Par marge</option>
+                    </select>
+                </div>
+                <button><span><i class="fa-solid fa-filter"></i>Générer</span></button>
+            </section>
+
+
+            <section class="spancomplet rouge">
+                <div class="icon1"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="uno">
+                    <h3>Stock critique détecté</h3>
+                    <p>Le produit "AirPod Pro 2" a atteint le seuil de critique de stock (3 unités restantes). Veuillez
+                        passer commande rapidement.</p>
+                    <span class="buttons">
+                        <button id="color1">Passer commande</button>
+                        <button>Marquer comme lu</button>
+                    </span>
+                </div>
+                <div  class="heure">
+                    <p>Il y a 5 minutes</p>
+                </div>
+            </section>
+            <section class="spancomplet bleu">
+                <div class="icon2"><i class="fa-solid fa-circle-info"></i></div>
+                <div class="dos">
+                    <h3>Nouvelle commande reçue</h3>
+                    <p>Commande #CMD-2024-004 recue de Marie Dubois pour un MacBook Pro 16" (€2,899.00)</p>
+                    <span class="buttons">
+                        <button id="color2">Voir la commande</button>
+                        <button>Marquer comme lue</button>
+                    </span>
+                </div>
+                <div  class="heure">
+                    <p>Il y a 15 minutes</p>
+                </div>
+            </section>
+            <section class="spancomplet vert">
+                <div class="icon3"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="tres">
+                    <h3>Commande expédiée</h3>
+                    <p>La commande #CMD-2024-003 a été expediée avec succès. Numéro de suivie : FR123456789</p>
+                    <span class="buttons">
+                        <button id="color3">Suivre l'envoi</button>
+                    </span>
+                </div>
+                <div  class="heure">
+                    <p>Il y a 1h</p>
+                </div>
+            </section>
+            <section class="spancomplet gris">
+                <div class="icon4"><i class="fa-solid fa-gear"></i></div>
+                <div class="quatres">
+
+                    <h3>Sauvegarde automatique terminée</h3>
+                    <p>Sauvegarde quotienne des données terminée avec succès. 2.3 GB de données sauvegardées.</p>
+                    <span class="buttons">
+                        <button id="color4">Voir les détails</button>
+                    </span>
+                </div>
+                <div  class="heure">
+                    <p>Il y a 2h</p>
+                </div>
+            </section>
+            <section class="spancomplet jaune">
+                <div class="icon5"><i class="fa-solid fa-shield"></i></div>
+                <div class="quintres">
+                    <h3>Connexion depuis un nouvel appareil</h3>
+                    <p>Connexion détectée depuis un nouvel appareil(iPhone,Paris,France). Si ce n'est pas vous, changez
+                        votre mots de passe.</p>
+                    <span class="buttons">
+                        <button id="color5">Sécuriserle compte</button>
+                    </span>
+                </div>
+                <div class="heure">
+                    <p>Il y a 3h</p>
+                </div>
+            </section>
+
+            <section class="end">
+                <div>
+                    <input type="checkbox">
+                    <label>Sélectionner tout</label>
+                </div>
+                <div class="flex">
+                    <button><span><i class="fa-solid fa-check"></i></span>Marquer comme lu</button>
+                    <button id="color5"><span><i class="fa-solid fa-trash"></i></span>Supprimer</button>
+                </div>
+            </section>
 </body>
+
 </html>

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analytics</title>
     <link rel="stylesheet" href="analytics.css">
-        <link rel="stylesheet" href="https://fontawesome.com/search?f=classic&s=solid&c=automotive&o=r">
+    <link rel="stylesheet" href="https://fontawesome.com/search?f=classic&s=solid&c=automotive&o=r">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-      <div class="dashboard-container">
+    <div class="dashboard-container">
         <!-- SIDEBAR -->
         <aside id="menu">
             <div class="sidebar-header">
@@ -73,53 +75,280 @@
         <!-- MAIN CONTENT -->
         <main>
             <a href="#" class="overlay"></a>
-            
+
             <div class="page-header">
-                <h1>Tableau de Bord Principal</h1>
-                <p>Gestion de stock de produits électroniques</p>
+                <h1><i class="fa-solid fa-chart-line"></i> Analytics & Rapports</h1>
+                <p>Analyse complète des performances et tendances</p>
             </div>
 
             <!-- STATISTIQUES -->
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-icon primary">
-                        <i class="fa-solid fa-boxes-stacked"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </span>
                     <div class="stat-info">
                         <h1>1,234</h1>
                         <p>Produits en Stock</p>
+
+                        <span class="pourcent">+12.5%</span>
                     </div>
+
                 </div>
 
                 <div class="stat-card">
                     <span class="stat-icon warning">
-                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </span>
                     <div class="stat-info">
                         <h1>23</h1>
                         <p>Stock Faible</p>
+                        <span class="pourcent">+8.2%</span>
                     </div>
                 </div>
 
                 <div class="stat-card">
                     <span class="stat-icon success">
-                        <i class="fa-solid fa-euro-sign"></i>
+                        <i class="fa-solid fa-users"></i>
                     </span>
                     <div class="stat-info">
                         <h1>€45,678</h1>
                         <p>Valeur Totale</p>
+                        <span class="pourcent1">+2.1%</span>
                     </div>
                 </div>
 
                 <div class="stat-card">
                     <span class="stat-icon secondary">
-                        <i class="fa-solid fa-truck"></i>
+                        <i class="fa-solid fa-percent"></i>
                     </span>
                     <div class="stat-info">
                         <h1>12</h1>
                         <p>Commandes en Attente</p>
+                        <span class="pourcent">+0.3%</span>
                     </div>
                 </div>
             </div>
+            <!-- COURBE -->
+            <section class="courbe-stat">
+                <header>
+                    <h2><span><i class="fa-solid fa-chart-area"></i></span>Evolution des Ventes</h2>
+                    <select name="jour">
+                        <option value="" disabled selected>30 derniers jours</option>
+                        <option value="1">7 derniers jours</option>
+                        <option value="2">30 derniers jours</option>
+                        <option value="3">90 derniers jours</option>
+                    </select>
+                </header>
+                <div>
+                    <span class="bar1"></span>
+                    <section>
+                        <p>Jan</p>
+                        <p>€8,500</p>
+                    </section>
+                    <span class="bar2"></span>
+                    <section>
+
+                        <p>Fèv</p>
+                        <p>€9,200</p>
+                    </section>
+                    <span class="bar3"></span>
+                    <section>
+
+                        <p>Mar</p>
+                        <p>€7,800</p>
+                    </section>
+                    <span class="bar4"></span>
+                    <section>
+
+                        <p>Avr</p>
+                        <p>€9,500</p>
+                    </section>
+                    <span class="bar5"></span>
+                    <section>
+
+                        <p>Mai</p>
+                        <p>€8,800</p>
+                    </section>
+                    <span class="bar6"></span>
+                    <section>
+
+                        <p>Jun</p>
+                        <p>€9,600</p>
+                    </section>
+                    <span class="bar7"></span>
+                    <section>
+
+                        <p>Jul</p>
+                        <p>€8,200</p>
+                    </section>
+                    <span class="bar8"></span>
+                    <section>
+
+                        <p>Aoû</p>
+                        <p>€8,900</p>
+                    </section>
+                    <span class="bar9"></span>
+                    <section>
+
+                        <p>Sept</p>
+                        <p>€8,900</p>
+                    </section>
+                    <span class="bar10"></span>
+                    <section>
+
+                        <p>Oct</p>
+                        <p>€8,900</p>
+                    </section>
+                    <span class="bar11"></span>
+                    <section>
+
+                        <p>Nov</p>
+                        <p>€8,900</p>
+                    </section>
+                    <span class="bar12"></span>
+                    <section>
+
+                        <p>Dec</p>
+                        <p>€8,900</p>
+                    </section>
+                </div>
+                <footer>
+                    <span class="bleu"></span>
+                    <p>Vente Réelles</p>
+                    <span class="vert"></span>
+                    <p>Objectifs</p>
+                </footer>
+            </section>
+            <!-- LEGENDE STAT -->
+            <section class="legende-stat">
+                <header>
+                    <h2><span><i class="fa-solid fa-chart-bar"></i></span>Répartition par Catégorie</h2>
+                </header>
+                <ul>
+                    <li>
+                        <div>
+                            <h3>Smartphones</h3>
+                            <h3>€15,980</h3>
+                        </div>
+                        <div>
+                            <hr>
+                            <span>35%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Laptops</h3>
+                            <h3>€11,415</h3>
+                        </div>
+                        <div>
+                            <hr>
+                            <span>25%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Tablettes</h3>
+                            <h3>€9,132</h3>
+                        </div>
+                        <div>
+                            <hr>
+                            <span>20%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>Accessoires</h3>
+                            <h3>€9,132</h3>
+                        </div>
+                        <div>
+                            <hr>
+                            <span>20%</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <table>
+                <caption>
+                    <h1> <span><i class="fa-solid fa-trophy"></i></span>Top Produits</h1>
+                    <select name="jour">
+                        <option value="" disabled selected>Par ventes</option>
+                        <option value="1">Par ventes</option>
+                        <option value="2">Par revenus</option>
+                        <option value="3">Par marge</option>
+                    </select>
+                </caption>
+                <thead>
+                    <tr>
+                        <td>Rang</td>
+                        <td>Produit</td>
+                        <td></td>
+                        <td></td>
+                        <td>Ventes</td>
+                        <td>Revenus</td>
+                        <td>Marge</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td>
+                            <div class="product-cell">
+                                <span class="product-icon">
+                                    <i class="fa-solid fa-laptop"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>MacBook Pro 16"</p>
+                                    <p>Apple - M3 Pro</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>234</td>
+                        <td>€280,866</td>
+                        <td>€42,130</td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span></td>
+                        <td>
+                            <div class="product-cell">
+                                <span class="product-icon">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>iPhone 15 Pro</p>
+                                    <p>Apple - 128GB</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>89</td>
+                        <td>€257,911</td>
+                        <td>€51,582</td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span></td>
+                        <td>
+                            <div class="product-cell">
+                                <span class="product-icon">
+                                    <i class="fa-solid fa-headphones"></i>
+                                </span>
+                                <div class="product-info">
+                                    <p>AirPods Pro 2</p>
+                                    <p>Apple - USB-C</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>445</td>
+                        <td>€124,155</td>
+                        <td>€18,623</td>
+                </tbody>
+            </table>
 </body>
+
 </html>
