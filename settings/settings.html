@@ -12,6 +12,35 @@
 </head>
 
 <body>
+
+    <div id="fenetre" class="blur">
+  <form class="pop-up">
+    
+    <section>
+      <h1>Mon Profil</h1>
+    </section>
+    <section>
+      <button>Changer la photo</button>
+    </section>
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+    </section>
+    <a href="#" class="sortir">Fermer</a>
+  </form>
+</div>
     <div class="dashboard-container">
         <!-- SIDEBAR -->
         <aside id="menu">
@@ -42,7 +71,7 @@
 
                 <div class="sidebar-profil">
                     <i class="fa-solid fa-circle-user"></i>
-                    <h3>Mon Profil</h3>
+                    <h3><a href="#fenetre" class="flou">Mon Profil</a></h3>
                 </div>
 
                 <div class="sidebar-logout">
@@ -92,11 +121,20 @@
                             <h3>Notifications</h3>
                             <p>Recevoir les notifications par email</p>
                         </span>
+                        <span>
+                            <input type="checkbox" id="theme-toggle">
+                            <label for="theme-toggle" class="switch"></label>
+                        </span>
                     </section>
                     <section>
                         <span>
                             <h3>Mode Sombre</h3>
                             <p>Activer le thème sombre</p>
+                        </span>
+
+                        <span>
+                            <input type="checkbox" id="theme-toggle1">
+                            <label for="theme-toggle1" class="switch"></label>
                         </span>
                     </section>
                     <section>
@@ -104,8 +142,12 @@
                             <h3>Auto-sauvegarde</h3>
                             <p>Sauvegarder automatiquement les modifications</p>
                         </span>
+                        <span>
+                            <input type="checkbox" id="theme-toggle2">
+                            <label for="theme-toggle2" class="switch"></label>
+                        </span>
                     </section>
-               
+                        
                     <section>
                         <span>
                             <h3>Langue</h3>
@@ -113,9 +155,9 @@
                         </span>
                         <select name="jour">
                             <option value="" disabled selected>Français</option>
-                            <option value="1">Par ventes</option>
-                            <option value="2">Par revenus</option>
-                            <option value="3">Par marge</option>
+                            <option value="1">Français</option>
+                            <option value="2">Anglais</option>
+                            <option value="3">Espagnol</option>
                         </select>
                     </section>
                 </div>
@@ -137,6 +179,11 @@
                             <h3>Auto-Commande</h3>
                             <p>Commande automatiquementen cas de stock faible</p>
                         </div>
+
+                         <span>
+                            <input type="checkbox" id="theme-toggle3">
+                            <label for="theme-toggle3" class="switch"></label>
+                        </span>
                     </section>
                     <section>
                         <div>
@@ -145,9 +192,9 @@
                         </div>
                         <select name="jour">
                             <option value="" disabled selected>Euro (€)</option>
-                            <option value="1">Par ventes</option>
-                            <option value="2">Par revenus</option>
-                            <option value="3">Par marge</option>
+                            <option value="1">Euro (€)</option>
+                            <option value="2">Dollar ($)</option>
+                            <option value="3">LivreSterling (£)</option>
                         </select>
                     </section>
                 </div>

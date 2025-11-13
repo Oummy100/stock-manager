@@ -588,6 +588,15 @@
             }
         }
 
-        .blur{
-            display: none;
-        }
+   /* .blur {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #92400e;
+}
+
+#fenetre:target {
+    display: block;
+} */
+

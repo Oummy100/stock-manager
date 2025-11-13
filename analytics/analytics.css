@@ -478,6 +478,10 @@ footer span {
     background: var(--Success);
 }
 
+
+.courbelegende{
+    margin-top: 2rem;
+}
 /* ===================== LEGENDE STAT ===================== */
 
 .legende-stat {
@@ -485,6 +489,7 @@ footer span {
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: auto;
 }
 
 .legende-stat header {
@@ -704,9 +709,8 @@ tbody tr:hover {
 .courbelegende {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column: span 4;
+    grid-column: span 3;
 }
-
 caption {    
     width: 100%;
 }
@@ -763,4 +767,6 @@ align-items: center;
 .td{
     width: 30%;
 }
+
+
 

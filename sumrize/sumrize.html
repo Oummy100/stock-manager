@@ -12,6 +12,35 @@
 </head>
 
 <body>
+
+    <div id="fenetre" class="blur">
+  <form class="pop-up">
+    
+    <section>
+      <h1>Mon Profil</h1>
+    </section>
+    <section>
+      <button>Changer la photo</button>
+    </section>
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+    </section>
+    <a href="#" class="sortir">Fermer</a>
+  </form>
+</div>
     <div class="dashboard-container">
         <!-- SIDEBAR -->
         <aside id="menu">
@@ -42,7 +71,7 @@
 
                 <div class="sidebar-profil">
                     <i class="fa-solid fa-circle-user"></i>
-                    <h3>Mon Profil</h3>
+                    <h3><a href="#fenetre" class="flou">Mon Profil</a></h3>
                 </div>
 
                 <div class="sidebar-logout">
@@ -88,27 +117,30 @@
                     <p>Type de rapport:</p>
                     <select name="jour">
                         <option value="" disabled selected>Rapport des ventes</option>
-                        <option value="1">Par ventes</option>
-                        <option value="2">Par revenus</option>
-                        <option value="3">Par marge</option>
+                        <option value="1">Rapport des ventes</option>
+                        <option value="2">Rapport des Stocks</option>
+                        <option value="3">Rapport Financiers</option>
+                        <option value="4">Rapport Client</option>
                     </select>
                 </div>
                 <div>
                     <p>Période:</p>
                     <select name="jour">
                         <option value="" disabled selected>Ce mois</option>
-                        <option value="1">Par ventes</option>
-                        <option value="2">Par revenus</option>
-                        <option value="3">Par marge</option>
+                        <option value="1">Aujourd'hui</option>
+                        <option value="2">Cette semaine</option>
+                        <option value="3">Ce mois</option>
+                        <option value="3">Ce trimestre</option>
+                        <option value="3">Cette année</option>
                     </select>
                 </div>
                 <div>
                     <p>Format:</p>
                     <select name="jour">
                         <option value="" disabled selected>PDF</option>
-                        <option value="1">Par ventes</option>
-                        <option value="2">Par revenus</option>
-                        <option value="3">Par marge</option>
+                        <option value="1">PDF</option>
+                        <option value="2">Excel</option>
+                        <option value="3">CSV</option>
                     </select>
                 </div>
                 <button><span><i class="fa-solid fa-file-arrow-down"></i></span> Générer le rapport</button>

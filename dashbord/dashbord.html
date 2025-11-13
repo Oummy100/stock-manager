@@ -13,33 +13,47 @@
 </head>
 
 <body>
-    <div class="blur">
-        <form class="pop-up" id="fenetre">
-            <section>
-                <h1><span></span> Mon Profil</h1>
-            </section>
-            <section>
-                <span></span>
-                <button>Changer la photo</button>
-            </section>
-            <section>
-                <h3>Nom :</h3>
-                <input type="text">
-            </section>
-            <section>
-                <h3>Prénom :</h3>
-                <input type="text">
-            </section>
-            <section>
-                <h3>Email :</h3>
-                <input type="mail">
-            </section>
-            <section>
-                <h3>Téléphone</h3>
-                <input type="tel">
-            </section>
-        </form>
+    <div id="fenetre" class="blur">
+  <form class="pop-up">
+    <span class="cross"> <span><i class="fa-solid fa-xmark"></span></i></span>
+     <section class="user">
+      <span><i class="fa-solid fa-user"></i></span>
+      <button>Changer la photo</button>
+    </section>
+    <div class="grid">
+   
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+      </section>
+      <section class="span2">
+      <h3>Rôle :</h3>
+      <input type="text">
+      </section>
+      <section class="span2">
+      <h3>Dernière connexion :</h3>
+      <input type="date">
+      <hr>
+    </section>
     </div>
+    <div class="buton">
+    <a href="#" class="sortir">Fermer</a>
+    <button>Sauvegarder</button>
+    </div>
+  </form>
+</div>
     <div class="dashboard-container">
         <!-- SIDEBAR -->
         <aside id="menu">
@@ -70,7 +84,7 @@
 
                 <div class="sidebar-profil">
                     <i class="fa-solid fa-circle-user"></i>
-                    <h3><a href="#fenetre">Mon Profil</a></h3>
+                    <h3><a href="#fenetre" class="flou">Mon Profil</a></h3>
                 </div>
 
                 <div class="sidebar-logout">
@@ -102,7 +116,7 @@
 
         <!-- MAIN CONTENT -->
         <main>
-            <a href="#" class="overlay"></a>
+            
             
             <div class="page-header">
                 <h1>Tableau de Bord Principal</h1>

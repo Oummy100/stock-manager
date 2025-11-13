@@ -394,3 +394,91 @@ main {
     background: rgb(0, 200, 255);
     color: white;
 }
+
+
+/* On cache l'input */
+#theme-toggle {
+  display: none;
+}
+
+/* Le fond de l'interrupteur */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Le petit cercle à l'intérieur */
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Quand l'interrupteur est activé */
+#theme-toggle:checked + .switch {
+  background-color: var(--Primary); /* fond sombre */
+}
+
+/* Le cercle se déplace vers la droite */
+#theme-toggle:checked + .switch::after {
+  transform: translateX(30px);
+}
+
+
+/* On cache l'input */
+#theme-toggle1 {
+  display: none;
+}
+
+/* Quand l'interrupteur est activé */
+#theme-toggle1:checked + .switch {
+  background-color: var(--Primary); /* fond sombre */
+}
+
+/* Le cercle se déplace vers la droite */
+#theme-toggle1:checked + .switch::after {
+  transform: translateX(30px);
+}
+
+/* On cache l'input */
+#theme-toggle2 {
+  display: none;
+}
+
+/* Quand l'interrupteur est activé */
+#theme-toggle2:checked + .switch {
+  background-color: var(--Primary); /* fond sombre */
+}
+
+/* Le cercle se déplace vers la droite */
+#theme-toggle2:checked + .switch::after {
+  transform: translateX(30px);
+}
+
+
+/* On cache l'input */
+#theme-toggle3 {
+  display: none;
+}
+
+/* Quand l'interrupteur est activé */
+#theme-toggle3:checked + .switch {
+  background-color: var(--Primary); /* fond sombre */
+}
+
+/* Le cercle se déplace vers la droite */
+#theme-toggle3:checked + .switch::after {
+  transform: translateX(30px);
+}

@@ -12,6 +12,35 @@
 </head>
 
 <body>
+
+    <div id="fenetre" class="blur">
+  <form class="pop-up">
+    
+    <section>
+      <h1>Mon Profil</h1>
+    </section>
+    <section>
+      <button>Changer la photo</button>
+    </section>
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+    </section>
+    <a href="#" class="sortir">Fermer</a>
+  </form>
+</div>
     <div class="dashboard-container">
         <!-- SIDEBAR -->
         <aside id="menu">
@@ -42,7 +71,7 @@
 
                 <div class="sidebar-profil">
                     <i class="fa-solid fa-circle-user"></i>
-                    <h3>Mon Profil</h3>
+                    <h3><a href="#fenetre" class="flou">Mon Profil</a></h3>
                 </div>
 
                 <div class="sidebar-logout">
@@ -128,18 +157,21 @@
                     <h3>Statut:</h3>
                     <select name="jour">
                         <option value="" disabled selected>Tous les statuts</option>
-                        <option value="1">Par ventes</option>
-                        <option value="2">Par revenus</option>
-                        <option value="3">Par marge</option>
+                        <option value="1">Tous les statuts</option>
+                        <option value="2">En attente</option>
+                        <option value="3">En cours</option>
+                        <option value="4">Expédiées</option>
+                        <option value="5">Livrées</option>
                     </select>
                 </div>
                 <div>
                     <h3>Période:</h3>
                     <select name="jour">
                         <option value="" disabled selected>Aujourd'hui</option>
-                        <option value="1">Par ventes</option>
-                        <option value="2">Par revenus</option>
-                        <option value="3">Par marge</option>
+                        <option value="1">Aujourd'hui</option>
+                        <option value="2">Cette Semaine</option>
+                        <option value="3">Ce mois</option>
+                        <option value="4">Tous</option>
                     </select>
                 </div>
                 <div class="input">
@@ -170,8 +202,8 @@
                     <p>€1,199.00</p>
                 </div>
                 <div class="div3">
-                    <button id="bleu"><span><i class="fa-solid fa-eye"></i></span> Voir détails</button>
-                    <button><span><i class="fa-solid fa-pen-to-square"></i></span> Modifier</button>
+                    <button id="bleu"><span><i class="fa-solid fa-eye"></i></span> <a href="#voir">Voir détails</a></button>
+                    <button><span><i class="fa-solid fa-pen-to-square"></i></span><a href="#modifier" class="noir">Modifier</a></button>
                     <button id="gris"><span><i class="fa-solid fa-check"></i></span> Traiter</button>
                 </div>
             </section>
@@ -235,6 +267,63 @@
                 </div>
 
             </section>
+<div id="voir" class="blure">
+  <form class="popup">
+    
+    <section>
+      <h1>Mon Profil</h1>
+    </section>
+    <section>
+      <button>Changer la photo</button>
+    </section>
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+    </section>
+    <a href="#" class="sortir">Fermer</a>
+  </form>
+</div>
+
+<div id="modifier" class="blure1">
+  <form class="popup1">
+    
+    <section>
+      <h1>Mon Profil</h1>
+    </section>
+    <section>
+      <button>Changer la photo</button>
+    </section>
+    <section>
+      <h3>Nom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Prénom :</h3>
+      <input type="text">
+    </section>
+    <section>
+      <h3>Email :</h3>
+      <input type="email">
+    </section>
+    <section>
+      <h3>Téléphone :</h3>
+      <input type="tel">
+    </section>
+    <a href="#" class="sortir">Fermer</a>
+  </form>
+</div>
 </body>
 
 </html>
