@@ -482,3 +482,150 @@ main {
 #theme-toggle3:checked + .switch::after {
   transform: translateX(30px);
 }
+
+
+
+
+/* ===================== RESPONSIVE PARAMÈTRES (SETTINGS) ===================== */
+@media (max-width: 768px) {
+    
+    /* ========== LAYOUT ========== */
+    .dashboard-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* ========== SIDEBAR ========== */
+    aside {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 1000;
+        width: 280px;
+        max-width: 80vw;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        grid-column: unset;
+        grid-row: unset;
+        transition: left 0.3s ease;
+    }
+
+    aside:target {
+        left: 0;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    aside:target ~ .overlay {
+        display: block;
+    }
+
+    .sidebar-menu li a {
+        color: white;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+        grid-column: 1 / 2 !important;
+    }
+
+    nav {
+        padding: 0 1rem;
+        height: 4rem;
+    }
+
+    .nav-gauche a {
+        display: block !important;
+    }
+
+    .nav-gauche h2 {
+        font-size: 0.85rem;
+    }
+
+    .nav-profil h3 {
+        display: none;
+    }
+
+    /* ========== MAIN ========== */
+    main {
+        grid-column: 1 / 2 !important;
+        padding: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ========== PARAMETRE SECTIONS ========== */
+    .parametre {
+        padding: 0 !important;
+        margin-bottom: 1rem;
+    }
+
+    .premier {
+        padding: 1rem;
+    }
+
+    .premier h2 {
+        font-size: 1rem;
+    }
+
+    .second {
+        flex-direction: column !important;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .second section {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem;
+    }
+
+    .second section > span:first-child {
+        width: 100%;
+    }
+
+    .second section > span:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .second select {
+        width: 100%;
+    }
+
+    .second input[type="number"] {
+        width: 100%;
+    }
+
+    .second button {
+        width: 100%;
+    }
+
+    /* ========== SWITCH TOGGLE ========== */
+    .switch {
+        width: 50px;
+        height: 26px;
+    }
+
+    .switch::after {
+        width: 20px;
+        height: 20px;
+    }
+
+    #theme-toggle:checked + .switch::after,
+    #theme-toggle1:checked + .switch::after,
+    #theme-toggle2:checked + .switch::after,
+    #theme-toggle3:checked + .switch::after {
+        transform: translateX(24px);
+    }
+}

@@ -527,3 +527,156 @@ border: solid 0.5px;
     right: 10rem;
     top: 2rem;
 }
+
+
+/* ===================== RESPONSIVE NOTIFICATIONS ===================== */
+@media (max-width: 768px) {
+    
+    /* ========== LAYOUT ========== */
+    .dashboard-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* ========== SIDEBAR ========== */
+    aside {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 1000;
+        width: 280px;
+        max-width: 80vw;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        grid-column: unset;
+        grid-row: unset;
+        transition: left 0.3s ease;
+    }
+
+    aside:target {
+        left: 0;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    aside:target ~ .overlay {
+        display: block;
+    }
+
+    .sidebar-menu li a {
+        color: white;
+    }
+
+    /* ========== HEADER ========== */
+    header {
+        grid-column: 1 / 2 !important;
+    }
+
+    nav {
+        padding: 0 1rem;
+        height: 4rem;
+    }
+
+    .nav-gauche a {
+        display: block !important;
+    }
+
+    .nav-gauche h2 {
+        font-size: 0.85rem;
+    }
+
+    .nav-profil h3 {
+        display: none;
+    }
+
+    /* ========== MAIN ========== */
+    main {
+        grid-column: 1 / 2 !important;
+        padding: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* ========== STATS ========== */
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    /* ========== DETAIL SECTION ========== */
+    .detail {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+
+    .detail div {
+        width: 100%;
+    }
+
+    .detail select {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .detail button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* ========== NOTIFICATION CARDS ========== */
+    .spancomplet {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        position: relative;
+    }
+
+    .icon1, .icon2, .icon3, .icon4, .icon5 {
+        margin-bottom: 1rem;
+    }
+
+    .uno, .dos, .tres, .quatres, .quintres {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .heure {
+        position: static !important;
+        right: auto !important;
+        top: auto !important;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    /* ========== END SECTION ========== */
+    .end {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex button {
+        width: 100%;
+    }
+}
